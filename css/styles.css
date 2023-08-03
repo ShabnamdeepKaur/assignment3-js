@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+    background-color: #f3f3f3;
+}
+
+h1 {
+    color: #ff6f61;
+}
+
+.todo-container {
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    margin-bottom: 12px;
+    padding: 10px;
+    width: 300px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.todo-item.checked {
+    text-decoration: line-through;
+    color: #555;
+    background-color: #c4f0c2;
+    transform: scale(0.95);
+}
+
+.todo-item.deleted {
+    color: #fff;
+    background-color: #ff4f4f;
+    animation: fadeOut 1s;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

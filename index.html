@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fun To-Do List</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <h1>My Weekend to-do List</h1>
+  <div class="todo-container">
+    <input type="text" id="newTodo" placeholder="Enter a fun task...">
+    <button id="addTodo" onclick="playDingSound()">Add Task</button>
+    <div id="todos"></div>
+  </div>
+  <audio id="dingSound" preload="auto">
+    <source src="music/ding.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="js/to-do-list.js"></script>
+</body>
+
+</html>
